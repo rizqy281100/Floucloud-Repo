@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Admin Login Page */
+.bg_img {
+    background-image: url(https://images.unsplash.com/photo-1527176930608-09cb256ab504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.uName, .passW {
+    border-radius: 25px;
+    background-color: #E5E5E5;
+}
+
+.uName::placeholder, .passW::placeholder {
+    color: #6C757D;
+}
+
+.forgot_pw {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+    padding-top: 0.3px;
+    text-decoration: none;
+    border: none;
+    color: #3772de;
+}
+
+.forgot_pw:hover {
+    color: #2b61c7;
+}
+
+.btn_login {
+    width: 150px;
+    border-radius: 25px;
+    background-color: #C4C4C4;
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn_login:hover {
+    color: #3c3c3c;
+}
+
+/* Add Admin */
+.btn_add_admin {
+    border-radius: 25px;
+    background-color: #233EAE;
+    color: #9fa8b9;
+}
+
+/* User Profile */
+.butn {
+    width: 200px;
+    border-radius: 25px;
+}
+
+.status {
+    width: 80px;
+    border-radius: 25px;
+}
+
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.5rem 0;
+}
+
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #9fa8b9;
+}
+
+.account-settings .about {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+
+.account-settings .about h5 {
+    margin: 0 0 15px 0;
+    color: #007ae1;
+}
+
+.account-settings .about p {
+    font-size: 0.825rem;
+}
+
+.form-control {
+    border: 1px solid #cfd1d8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .825rem;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 25px;
+    border: 0;
+    margin-bottom: 1rem;
+}
