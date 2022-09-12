@@ -96,14 +96,14 @@
               <ul class="nav nav-treeview">
 
                 <li class="nav-item">
-                  <a href="<?php echo base_url('user_'); ?>" class="nav-link">
+                  <a href="<?php echo base_url('user'); ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>User</p>
                   </a>
                 </li>
 
                 <li class="nav-item">
-                  <a href="<?php echo base_url('admin_'); ?>" class="nav-link">
+                  <a href="<?php echo base_url('admin'); ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Admin</p>
                   </a>

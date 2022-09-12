@@ -8,8 +8,8 @@ class Dashboard extends CI_Controller {
         // echo 'Welcome ' . $data['admin_data'];
         
         $data['title'] = 'Floucloud Repository';
-        $this->load->view('dashboard/template/header.php', $data);
-        $this->load->view('dashboard/dashboard.php');
-        $this->load->view('dashboard/template/footer.php');
+        $this->load->view('menu/template/header.php', $data);
+        $this->load->view('menu/dashboard.php');
+        $this->load->view('menu/template/footer.php');
     }
 }

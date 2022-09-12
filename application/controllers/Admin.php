@@ -5,8 +5,8 @@ class Admin extends CI_Controller {
 
     public function index() {
         $data['title'] = 'Floucloud Repository';
-        $this->load->view('profile/template/header.php', $data);
-        $this->load->view('profile/admin.php');
-        $this->load->view('profile/template/footer.php');
+        $this->load->view('menu/template/header.php', $data);
+        $this->load->view('menu/user/data_admin.php');
+        $this->load->view('menu/template/footer.php');
     }
 }
