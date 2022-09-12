@@ -12,14 +12,14 @@
                                     <?= $this->session->flashdata('message') ?>
                                 <?php endif ?>
 
-                                <!-- Enter Email -->
+                                <!-- Email -->
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email Address</label>
                                     <input type="text" name="email" id="email" class="form-control uName" placeholder="Enter Email" value="<?php echo set_value('email'); ?>">
                                     <?php echo form_error('email', '<small class="text-danger pl-2">', '</small>'); ?>
                                 </div>
 
-                                <!-- Enter Password -->
+                                <!-- Password -->
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
                                     <input type="password" name="password" id="password" class="form-control passW" placeholder="Enter Password">

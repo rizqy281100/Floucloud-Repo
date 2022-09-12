@@ -37,11 +37,13 @@ class Auth extends CI_Controller {
 		// die();
 		
 		if($admin_data) {
+			// If Admin is Active
 			if($admin_data['status'] == 1) {
 				if($password == $admin_data['password']) {
 				// if(password_verify($password, $admin_data['password'])) {
 					$data = [
-						'email' => $admin_data['email']
+						'email' => $admin_data['email'],
+						'fullname' => $admin_data['fullname']
 					];
 					
 					$this->session->set_userdata($data);
@@ -59,13 +61,17 @@ class Auth extends CI_Controller {
 			}
 		}
 		else {
-			$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">User does not Exists</div>');
+			$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email is not Registered</div>');
 			redirect('auth');
 		}
 	}
 
-	public function data_admin() {
-		
+	public function logout() {
+		$this->session->unset_userdata('email');
+		$this->session->unset_userdata('username');
+
+		$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">You have been Logged Out !</div>');
+		redirect('auth');
 	}
 
 }

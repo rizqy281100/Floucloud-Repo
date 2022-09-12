@@ -43,6 +43,7 @@
         <li class="nav-item dropdown">
 
           <a class="nav-link" data-toggle="dropdown" href="#">
+            <span class="mr-4" style="color: black;"><?php echo $data_admin['name']; ?></span>
             <i class="far fa-user"></i>
           </a>
 
@@ -55,7 +56,7 @@
             <a href="#" class="dropdown-item">Reset Password</a>
 
             <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">Sign Out</a>
+            <a href="<?php echo base_url('auth/logout'); ?>" class="dropdown-item">Sign Out</a>
 
           </div>
 
