@@ -240,7 +240,6 @@
                       <tr>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Phone</th>
                         <th>Last Login</th>
                         <th>Status</th>
                         <th>Action</th>
@@ -257,10 +256,8 @@
                         </td>
                         <td>Win 95+</td>
                         <td> 4</td>
-                        <td>X</td>
                         <td>
                           <div class="dropdown">
-
                             <button type="submit" class="btn btn-sm dropdown-toggle" style="background-color: coral;" data-toggle="dropdown">Edit</button>
 
                             <div class="dropdown-menu dropdown-menu-left">
@@ -269,7 +266,6 @@
                               <a class="dropdown-item" href="#">Edit</a>
                               <a class="dropdown-item" href="#">Delete</a>
                             </div>
-
                           </div>
                         </td>
                       </tr>
@@ -281,10 +277,8 @@
                         </td>
                         <td>Win 95+</td>
                         <td>5</td>
-                        <td>C</td>
                         <td>
                           <div class="dropdown">
-
                             <button type="submit" class="btn btn-sm dropdown-toggle" style="background-color: coral;" data-toggle="dropdown">Edit</button>
 
                             <div class="dropdown-menu dropdown-menu-left">
@@ -293,7 +287,6 @@
                               <a class="dropdown-item" href="#">Edit</a>
                               <a class="dropdown-item" href="#">Delete</a>
                             </div>
-
                           </div>
                         </td>
                       </tr>
