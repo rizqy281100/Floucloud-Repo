@@ -180,13 +180,14 @@
       </div>
     </aside>
 
-    <!-- Content -->
+    <!-- Data Admin Table -->
     <div class="content-wrapper">
 
       <section class="content-header">
         <div class="container-fluid">
           <div class="row">
 
+            <!-- Add New Admin Button -->
             <div class="col-4">
               <button type="submit" class="btn text-white btn_add_admin">Add Admin
                 <i class="fa fa-plus" style="padding-left: 5px;"></i>
