@@ -42,8 +42,8 @@
         <!-- Admin Profile Dropdown -->
         <li class="nav-item dropdown">
 
-          <a class="nav-link" data-toggle="dropdown" href="#">
-            <span class="mr-4" style="color: black;"><?php echo $data_admin['name']; ?></span>
+          <a class="nav-link" data-toggle="dropdown">
+            <span class="mr-4"><?php echo $data_admin['fullname']; ?></span>
             <i class="far fa-user"></i>
           </a>
 
