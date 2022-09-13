@@ -41,12 +41,13 @@ class Auth extends CI_Controller {
 			if($admin_data['status'] == 1) {
 				if($password == $admin_data['password']) {
 				// if(password_verify($password, $admin_data['password'])) {
-					$data = [
+					$data_user = [
+						'is_login' => true, 
 						'email' => $admin_data['email'],
-						'fullname' => $admin_data['fullname']
+						'name' => $admin_data['name']
 					];
 					
-					$this->session->set_userdata($data);
+					$this->session->set_userdata($data_user);
 					redirect('dashboard');
 				}
 				else {
@@ -67,6 +68,7 @@ class Auth extends CI_Controller {
 	}
 
 	public function logout() {
+		$this->session->unset_userdata('is_login');
 		$this->session->unset_userdata('email');
 		$this->session->unset_userdata('username');
 

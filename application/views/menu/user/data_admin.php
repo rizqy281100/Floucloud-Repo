@@ -247,77 +247,20 @@
                     </thead>
 
                     <tbody>
-
-                      <!-- 1 - 5 -->
+                      <?php 
+                        foreach($query as $list):
+                      ?>
                       <tr>
-                        <td>Trident</td>
-                        <td>Internet
-                          Explorer 4.0
-                        </td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="submit" class="btn btn-sm dropdown-toggle" style="background-color: coral;" data-toggle="dropdown">Edit</button>
-
-                            <div class="dropdown-menu dropdown-menu-left">
-                              <a class="dropdown-item" href="#">View Profile</a>
-                              <a class="dropdown-item" href="#">Reset Password</a>
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Delete</a>
-                            </div>
-                          </div>
-                        </td>
+                          <td><?= $list['name']?></td>
+                          <td><?= $list['email']?></td>
+                          <td><?= $list['last_login']?></td>
+                          <td><?= $list['status']?></td>
+                          <td><?= $list['name']?></td>
                       </tr>
 
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet
-                          Explorer 5.0
-                        </td>
-                        <td>Win 95+</td>
-                        <td>5</td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="submit" class="btn btn-sm dropdown-toggle" style="background-color: coral;" data-toggle="dropdown">Edit</button>
-
-                            <div class="dropdown-menu dropdown-menu-left">
-                              <a class="dropdown-item" href="#">View Profile</a>
-                              <a class="dropdown-item" href="#">Reset Password</a>
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Delete</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet
-                          Explorer 5.5
-                        </td>
-                        <td>Win 95+</td>
-                        <td>5.5</td>
-                        <td>A</td>
-                      </tr>
-
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet
-                          Explorer 6
-                        </td>
-                        <td>Win 98+</td>
-                        <td>6</td>
-                        <td>A</td>
-                      </tr>
-
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet Explorer 7</td>
-                        <td>Win XP SP2+</td>
-                        <td>7</td>
-                        <td>A</td>
-                      </tr>
+                      <?php
+                        endforeach;
+                      ?>
 
                     </tbody>
 
