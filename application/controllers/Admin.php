@@ -8,8 +8,10 @@ class Admin extends CI_Controller {
         // var_dump($query);
         // die();
 
-        $data['title'] = 'Floucloud Repository';
-        $this->load->view('menu/template/header.php', $data);
+        $title['title'] = 'Floucloud Repository';
+        $this->load->view('menu/template/header', $title);
+        $this->load->view('menu/template/navbar', $title);
+        $this->load->view('menu/template/sidebar', $title);
         $this->load->view('menu/user/data_admin.php', $data);
         $this->load->view('menu/template/footer.php');
     }

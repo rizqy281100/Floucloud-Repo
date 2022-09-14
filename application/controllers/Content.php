@@ -5,8 +5,10 @@ class Content extends CI_Controller {
 
     public function index() {
         
-        $data['title'] = 'Floucloud Repository';
-        $this->load->view('menu/template/header.php', $data);
+        $title['title'] = 'Floucloud Repository';
+        $this->load->view('menu/template/header', $title);
+        $this->load->view('menu/template/navbar', $title);
+        $this->load->view('menu/template/sidebar', $title);
         $this->load->view('menu/content');
         $this->load->view('menu/template/footer');
     }

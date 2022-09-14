@@ -15,10 +15,11 @@ class Dashboard extends CI_Controller {
             $this->load->view('menu/template/sidebar', $title);
             $this->load->view('menu/dashboard', $data);
             $this->load->view('menu/template/footer.php');
-        }else{
-            $data['title'] = 'Floucloud Repository';
+        }
+        else {
+            $title['title'] = 'Floucloud Repository';
 			$this->load->helper('url');
-			$this->load->view('auth/template/header', $data);
+			$this->load->view('auth/template/header', $title);
 			$this->load->view('auth/login');
 			$this->load->view('auth/template/footer');
         }
