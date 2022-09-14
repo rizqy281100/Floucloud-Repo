@@ -6,9 +6,35 @@
           <div class="row mb-2">
 
             <div class="col-4">
-              <button type="submit" class="btn text-white btn_add_admin">Add Admin
+              <button type="button" class="btn text-white btn_add_admin" data-toggle="modal" data-target="#exampleModal">Add New Content
                 <i class="fa fa-plus" style="padding-left: 5px;"></i>
               </button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Upload Content</h5>
+
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+                    <div class="modal-body">
+                      test
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+
+                  </div>
+                  
+                </div>
+              </div>
             </div>
 
           </div>
@@ -23,7 +49,7 @@
               <div class="card">
 
                 <div class="card-header">
-                  <h3 class="card-title">DataTable with minimal features & hover style</h3>
+                  <h3 class="card-title">Contents Data Table</h3>
                 </div>
                           
                 <div class="card-body">

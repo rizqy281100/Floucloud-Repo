@@ -41,7 +41,7 @@
         <li class="nav-item dropdown">
 
           <a class="nav-link" data-toggle="dropdown">
-            <span class="mr-4"><?= $this->session->userdata('email') ?></span>
+            <span class="mr-4"><?= $this->session->userdata('name') ?></span>
             <i class="far fa-user"></i>
           </a>
 

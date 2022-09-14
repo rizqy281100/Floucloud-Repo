@@ -10,11 +10,11 @@ class Dashboard extends CI_Controller {
             // var_dump($data['data_admin']);
             // die();
             $title['title'] = 'Floucloud Repository';
-            $this->load->view('menu/template/header', $title);
-            $this->load->view('menu/template/navbar', $title);
-            $this->load->view('menu/template/sidebar', $title);
+            $this->load->view('template/header', $title);
+            $this->load->view('template/navbar', $title);
+            $this->load->view('template/sidebar', $title);
             $this->load->view('menu/dashboard', $data);
-            $this->load->view('menu/template/footer.php');
+            $this->load->view('template/footer');
         }
         else {
             $title['title'] = 'Floucloud Repository';

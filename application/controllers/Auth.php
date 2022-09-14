@@ -15,9 +15,9 @@ class Auth extends CI_Controller {
 		$this->form_validation->set_rules('password', 'Password', 'trim|required');
 
 		if ($this->form_validation->run() == false) {
-			$data['title'] = 'Floucloud Repository';
+			$title['title'] = 'Floucloud Repository';
 			$this->load->helper('url');
-			$this->load->view('auth/template/header', $data);
+			$this->load->view('auth/template/header', $title);
 			$this->load->view('auth/login');
 			$this->load->view('auth/template/footer');
 		}

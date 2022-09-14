@@ -68,6 +68,7 @@
                       <?php 
                         foreach($query as $list):
                       ?>
+                      
                       <tr>
                           <td><?= $list['name']?></td>
                           <td><?= $list['email']?></td>
