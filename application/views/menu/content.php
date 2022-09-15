@@ -22,7 +22,7 @@
                       </button>
                     </div>
 
-                    <div class="modal-body text-center">
+                    <div class="modal-body">
                       <form>
                         <div class="form-row">
 
