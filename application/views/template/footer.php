@@ -32,6 +32,7 @@
   <script src="assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
   <!-- AdminLTE App -->
   <script src="assets/dist/js/adminlte.min.js"></script>
+  
   <script>
     $(function () {
         $("#example1").DataTable({
@@ -49,6 +50,14 @@
         "autoWidth": false,
         "responsive": true,
       });    
+    });
+  </script>
+
+  <script>
+    // Add the following code if you want the name of the file appear on select
+    $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
     });
   </script>
 </body>
