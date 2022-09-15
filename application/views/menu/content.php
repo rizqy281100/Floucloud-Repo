@@ -11,7 +11,7 @@
               </button>
 
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog">
                   <div class="modal-content">
 
                     <div class="modal-header">
@@ -25,6 +25,11 @@
                     <div class="modal-body text-center">
                       <form>
                         <div class="form-row">
+
+                          <div class="custom-file mb-3">
+                            <input type="file" class="custom-file-input" id="uploadThumbnail">
+                            <label class="custom-file-label" for="uploadThumbnail">Choose Image Thumbnail</label>
+                          </div>
 
                           <div class="form-group col-md-6">
                             <label for="category">Category</label>
@@ -45,13 +50,28 @@
                         </div>
                         
                         <div class="form-group">
-                          <label for="inputAddress2">Content Caption</label>
-                          <textarea type="textarea" class="form-control" id="inputAddress2"></textarea>
+                          <label for="contentCaption">Content Caption</label>
+                          <textarea type="textarea" class="form-control" id="contentCaption"></textarea>
                         </div>
 
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" id="uploadFile">
-                          <label class="custom-file-label" for="customFile">Choose File</label>
+                          <label class="custom-file-label" for="uploadFile">Choose File</label>
+                        </div>
+
+                        <div class="custom-file mt-2">
+                          <input type="file" class="custom-file-input" id="uploadPicture1">
+                          <label class="custom-file-label" for="uploadPicture1">Choose Picture 1</label>
+                        </div>
+
+                        <div class="custom-file mt-2">
+                        <input type="file" class="custom-file-input" id="uploadPicture2">
+                          <label class="custom-file-label" for="uploadPicture2">Choose Picture 2</label>
+                        </div>
+
+                        <div class="custom-file mt-2">
+                        <input type="file" class="custom-file-input" id="uploadPicture3">
+                          <label class="custom-file-label" for="uploadPicture3">Choose Picture 3</label>
                         </div>
 
                       </form>
@@ -59,7 +79,7 @@
 
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-primary">Upload</button>
                     </div>
 
                   </div>
