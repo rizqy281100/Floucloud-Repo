@@ -51,7 +51,7 @@
                         
                         <div class="form-group">
                           <label for="contentCaption">Content Caption</label>
-                          <textarea type="textarea" class="form-control" id="contentCaption"></textarea>
+                          <textarea type="textarea" class="form-control" id="contentCaption" placeholder="Caption Here"></textarea>
                         </div>
 
                         <div class="custom-file">
@@ -65,12 +65,12 @@
                         </div>
 
                         <div class="custom-file mt-2">
-                        <input type="file" class="custom-file-input" id="uploadPicture2">
+                          <input type="file" class="custom-file-input" id="uploadPicture2">
                           <label class="custom-file-label" for="uploadPicture2">Choose Picture 2</label>
                         </div>
 
                         <div class="custom-file mt-2">
-                        <input type="file" class="custom-file-input" id="uploadPicture3">
+                          <input type="file" class="custom-file-input" id="uploadPicture3">
                           <label class="custom-file-label" for="uploadPicture3">Choose Picture 3</label>
                         </div>
 
