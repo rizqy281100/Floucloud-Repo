@@ -5,9 +5,13 @@
         <div class="container-fluid">
           <div class="row mb-2">
 
-            <div class="col-4">
-              <button type="button" class="btn text-white btn_add_admin" data-toggle="modal" data-target="#exampleModal">Add New Content
-                <i class="fa fa-plus" style="padding-left: 5px;"></i>
+            <div class="col-6">
+              <button type="button" class="btn text-white btn_add" data-toggle="modal" data-target="#exampleModal">Add New Content
+                <i class="fa fa-plus pl-1"></i>
+              </button>
+
+              <button type="button" class="btn text-white btn_update ml-3" data-toggle="modal" data-target="#exampleModal2">Edit Document Version
+                <i class="fa fa-plus pl-1"></i>
               </button>
 
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

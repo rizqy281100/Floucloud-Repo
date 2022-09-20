@@ -49,10 +49,17 @@
     color: #3c3c3c;
 }
 
-/* Add Admin */
-.btn_add_admin {
+/* Button Add */
+.btn_add {
     border-radius: 25px;
     background-color: #233EAE;
+    color: #9fa8b9;
+}
+
+/* Button Edit */
+.btn_update {
+    border-radius: 25px;
+    background-color: #8D19A0;
     color: #9fa8b9;
 }
 

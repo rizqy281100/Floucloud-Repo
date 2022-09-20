@@ -12,7 +12,7 @@ class Admin extends CI_Controller {
         $this->load->view('template/header', $title);
         $this->load->view('template/navbar', $title);
         $this->load->view('template/sidebar', $title);
-        $this->load->view('user/data_admin', $data);
+        $this->load->view('menu/user/data_admin', $data);
         $this->load->view('template/footer');
     }
 }
