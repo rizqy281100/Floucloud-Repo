@@ -32,9 +32,6 @@ class Auth extends CI_Controller {
 		$password = $this->input->post('password');
 
 		$admin_data = $this->db->get_where('data_admin', ['email' => $email])->row_array();
-
-		// var_dump($admin_data);
-		// die();
 		
 		if($admin_data) {
 			// If Admin is Active
