@@ -138,12 +138,13 @@
                         <th>Last Login</th>
                         <th>Status</th>
                         <th>Action</th>
+                        <th>Test</th>
                       </tr>
                     </thead>
 
                     <tbody>
                       <?php 
-                        foreach($query as $list):
+                        foreach($admin as $list):
                       ?>
                       
                       <tr>
