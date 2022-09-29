@@ -5,6 +5,12 @@ use chriskacerguis\RestServer\RestController;
 
 class User extends RestController {
 
+    public function __construct() {
+        parent::__construct();
+
+        $this->methods['user_get']['limit'] = 20;
+    }
+
     // Add User
     public function user_post(){
         $data = [
