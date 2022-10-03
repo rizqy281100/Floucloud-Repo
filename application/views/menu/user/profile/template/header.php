@@ -20,7 +20,7 @@
     <!-- Theme style -->
     <link rel="stylesheet" type="text/css" href="assets/dist/css/adminlte.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('application/views/styles/user.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('application/views/styles/styles.css') ?>">
 </head>
 
 <body class="bg-dark bg_img">

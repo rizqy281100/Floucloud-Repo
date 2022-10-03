@@ -47,7 +47,7 @@
 
           <div class="dropdown-menu dropdown-menu-right">
             <div class="dropdown-divider"></div>
-            <a href="<?php echo base_url('profileAdmin'); ?>" class="dropdown-item">View Profile</a>
+            <a href="menu/user/profile/admin_profile.php" class="dropdown-item">View Profile</a>
 
             <div class="dropdown-divider"></div>
             <a href="#" class="dropdown-item">Reset Password</a>

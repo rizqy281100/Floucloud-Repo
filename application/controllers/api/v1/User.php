@@ -1,15 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+require_once APPPATH .'/libraries/JWT.php';
+use \Firebase\JWT\JWT;
+
 use chriskacerguis\RestServer\RestController;
 
 class User extends RestController {
-
-    public function __construct() {
-        parent::__construct();
-
-        $this->methods['user_get']['limit'] = 20;
-    }
 
     // Add User
     public function user_post(){
@@ -114,6 +111,19 @@ class User extends RestController {
         }
         else {
             $this->response(array('status' => 'User not Found'), 404);
+        }
+    }
+
+    public function is_valid() {
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
+
+        $hash = $this->get('email', $email)['password'];
+        
+        if(password_verify($password, $hash)) {
+            return true;
+
+            return false;
         }
     }
 }
