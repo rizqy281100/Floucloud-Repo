@@ -1,5 +1,6 @@
 
-    <div class="container mt-5 pt-4">
+<div class="content-wrapper">
+    <div class="container pt-5">
         <div class="row">
             <div class="col-md-3 text-center">
                 <div class="card">
@@ -34,62 +35,60 @@
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="fullname" style="color: black;">Name</label>
-                                    <input type="fullname" class="form-control txt text-muted" id="fullname" value="<?= $this->session->userdata('name') ?>" readonly>
+                                    <input type="fullname" class="form-control txt text-muted txtEdit" id="fullname" value="<?= $this->session->userdata('name') ?>" readonly>
                                 </div>
                             </div>
 
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="email" style="color: black;">Email</label>
-                                    <input type="email" class="form-control txt text-muted" id="email" value="rizqy1078@gmail.com" readonly>
+                                    <input type="email" class="form-control txt text-muted txtEdit" id="email" value="<?= $this->session->userdata('email') ?>" readonly>
                                 </div>
                             </div>
 
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="username" style="color: black;">Username</label>
-                                    <input type="text" class="form-control txt text-muted" id="username" value="admin_repo" readonly>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                <div class="form-group">
-                                    <label for="password" style="color: black;">Password</label>
-                                    <input type="password" class="form-control txt text-muted" id="password" value="admin123" readonly>
+                                    <input type="text" class="form-control txt text-muted txtEdit" id="username" value="<?= $this->session->userdata('username') ?>" readonly>
                                 </div>
                             </div>
 
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="phone" style="color: black;">Phone</label>
-                                    <input type="tel" class="form-control txt text-muted" id="email" value="085692432820" readonly>
+                                    <input type="tel" class="form-control txt text-muted txtEdit" id="phone" value="<?= $this->session->userdata('phone') ?>" readonly>
                                 </div>
                             </div>
 
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="role" style="color: black;">Role</label>
-                                    <input type="text" class="form-control txt text-muted" id="role" value="Admin" readonly>
+                                    <input type="text" class="form-control txt text-muted txtEdit" id="role" value="<?= $this->session->userdata('role') ?>" readonly>
                                 </div>
                             </div>
                             
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="register_date" style="color: black;">Register Date</label>
-                                    <input type="text" class="form-control txt text-muted" id="register_date" value="2022-08-26 00:09:38" readonly>
+                                    <input type="text" class="form-control txt text-muted txtEdit" id="register_date" value="<?= $this->session->userdata('register_date') ?>" readonly>
                                 </div>
                             </div>
                             
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="last_login" style="color: black;">Last Login</label>
-                                    <input type="text" class="form-control txt text-muted" id="last_login" value="2022-08-19 10:41:41" readonly>
+                                    <input type="text" class="form-control txt text-muted txtEdit" id="last_login" value="<?= $this->session->userdata('last_login') ?>" readonly>
                                 </div>
                             </div>
                             
+
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
-                                    <span class="btn btn-success mt-3 status">Active</span>
+                                    <?php if($this->session->userdata('status') == 1): ?>
+                                        <span class="btn btn-success mt-4 status">Active</span>
+                                    <?php else: ?>
+                                        <span class="btn btn-danger mt-4 status">Inactive</span>
+                                    <?php endif; ?>
                                 </div>
                             </div>
 
@@ -99,5 +98,12 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div class="text">
+                <p>footer example</p>
+            </div>
+        </footer>
     </div>
+</div>
 

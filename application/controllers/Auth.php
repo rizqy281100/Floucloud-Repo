@@ -24,7 +24,6 @@ class Auth extends CI_Controller {
 		else {
 			$this->_login();
 		}
-		
 	}
 
 	private function _login() {
@@ -41,7 +40,13 @@ class Auth extends CI_Controller {
 					$data_user = [
 						'is_login' => true, 
 						'email' => $admin_data['email'],
-						'name' => $admin_data['name']
+						'name' => $admin_data['name'],
+						'username' => $admin_data['username'],
+						'phone' => $admin_data['phone'],
+						'role' => $admin_data['role'],
+						'status' => $admin_data['status'],
+						'register_date' => $admin_data['register_date'],
+						'last_login' => $admin_data['last_login']
 					];
 					
 					$this->session->set_userdata($data_user);
@@ -52,7 +57,6 @@ class Auth extends CI_Controller {
 					redirect('auth');
 				}
 			}
-			
 			else {
 				$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email is not Activated</div>');
 				redirect('auth');
@@ -72,6 +76,4 @@ class Auth extends CI_Controller {
 		$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">You have been Signed Out !</div>');
 		redirect('auth');
 	}
-
 }
-

@@ -9,7 +9,7 @@
                 <img class="img" src="assets/img/flou-logo.png" style="width: 280px; height: 200px;">
 
                 <?php if($this->session->flashdata('message')): ?>
-                  <?php echo $this->session->flashdata('message') ?>
+                  <?php $this->session->flashdata('message') ?>
                 <?php endif ?>
 
                 <!-- Email -->

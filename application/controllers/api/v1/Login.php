@@ -8,7 +8,7 @@ use chriskacerguis\RestServer\RestController;
 
 class Login extends RestController {
 
-    private $secret = 'This Key is Secret';
+    private $secret = 'MhRdJPRM06lFyMu3iCEbnhF1sR2mEoxY';
 
     public function login() {
 
@@ -28,7 +28,7 @@ class Login extends RestController {
         $payload['iat'] = $date->getTimestamp();
         $payload['exp'] = $date->getTimestamp() + 60*60*2;
 
-        $output['id_token'] = JWT::encode($payload, $this->secret);
+        $output['id_token'] = JWT::encode($payload, $this->secret, 'HS256');
         
         $this->response($output);
     }

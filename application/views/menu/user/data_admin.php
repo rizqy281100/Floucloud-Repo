@@ -138,7 +138,6 @@
                         <th>Last Login</th>
                         <th>Status</th>
                         <th>Action</th>
-                        <th>Test</th>
                       </tr>
                     </thead>
 
