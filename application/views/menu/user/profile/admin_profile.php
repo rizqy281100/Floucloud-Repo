@@ -98,12 +98,6 @@
                 </div>
             </div>
         </div>
-
-        <footer>
-            <div class="text">
-                <p>footer example</p>
-            </div>
-        </footer>
     </div>
 </div>
 
