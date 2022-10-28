@@ -45,7 +45,7 @@ class User extends RestController {
             if($check_user) {
                 $this->response([
                     'status' => true,
-                    'message' => 'User has been Registered!',
+                    'message' => 'User is Available!',
                     'data' => $check_user
                 ], 200);
             }
@@ -64,7 +64,7 @@ class User extends RestController {
     }
     
     // Edit User
-    public function user_put() {
+    public function user_put() { 
         $id_user = $this->put('id_user');
 
         $data = array (
@@ -83,7 +83,7 @@ class User extends RestController {
         if($update) {
             $this->response([
                 'status' => true,
-                'message' => 'User has been Editted!'
+                'message' => 'User has been Edited!'
             ], 200);
         }
         else {

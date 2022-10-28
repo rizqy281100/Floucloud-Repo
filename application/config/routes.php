@@ -54,6 +54,9 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['api/v1/user'] = 'api/v1/user/user';
+
+$route['api/v1/login'] = 'api/v1/login/login';
+
 $route['api/v1/admin'] = 'api/v1/admin/admin';
 $route['api/v1/content'] = 'api/v1/content/content';
 $route['api/v1/notification'] = 'api/v1/notification/notification';

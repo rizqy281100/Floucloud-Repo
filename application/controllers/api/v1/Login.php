@@ -8,28 +8,39 @@ use chriskacerguis\RestServer\RestController;
 
 class Login extends RestController {
 
-    private $secret = 'MhRdJPRM06lFyMu3iCEbnhF1sR2mEoxY';
+     //Login User
+     public function user_login () {
+        $data = [
+            'email' => trim($this->input->post('email', true)),
+            'password' => md5(trim($this->input->post('password'), true))
+        ];
 
-    public function login() {
+        $check = $this->db->get_where('data_user', array('email' => $this->input->post('email', true)));
+        $row = $this->db->get_where('data_user', $data)->row();
 
-        $date = new DateTime();
+        if($check->num_rows() >= 1) {
+            if($row) {
+                $result = [
+                    'id_user' => $row->id_user,
+                    'profile_picture' =>$row->profile_picture,
+                    'username' => $row->username,
+                    'email' => $row->email,
+                    'phone' => $row->phone,
+                    'nik' => $row->nik,
+                    'sales_segmen' => $row->sales_segmen,
+                    'password' => $row->password,
+                    'status' => $row->status,
+                    'is_login' => $row->is_login
+                ];
 
-        if(!$this->user->is_valid()) {
-            return $this->response([
-                'success' => false,
-                'message' => 'Email or Password is Wrong!'
-            ]);
+                $this->response(['error' => false, 'message' => 'User has Logged In', 'Result' => $result], 201);
+            }
+            else {
+                $this->response(['error' => true, 'message' => 'Login Failed'], 401); 
+            }
         }
-
-        $user = $this->user->get('email', $this->input->post('email'));
-
-        $payload['id'] = $user->id;
-        $payload['email'] = $user->email;
-        $payload['iat'] = $date->getTimestamp();
-        $payload['exp'] = $date->getTimestamp() + 60*60*2;
-
-        $output['id_token'] = JWT::encode($payload, $this->secret, 'HS256');
-        
-        $this->response($output);
+        else {
+            $this->response(['error' => true, 'message' => 'User not Found'], 401);
+        }
     }
 }
