@@ -151,7 +151,10 @@
                           <td><?= $list['email']?></td>
                           <td><?= $list['last_login']?></td>
                           <td><?= $list['status']?></td>
-                          <td><?= $list['name']?></td>
+                          <td>
+                            <a href="#" class="btn btn-info btn-sm update-record">Edit</a>
+                            <a href="#" class="btn btn-danger btn-sm delete-record">Delete</a>
+                          </td>
                       </tr>
 
                       <?php

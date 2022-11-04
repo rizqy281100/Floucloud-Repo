@@ -95,7 +95,7 @@ class User extends RestController {
     }
 
     // Delete User
-    public function user_delete() {
+    public function user_delete() { 
         $id_user = $this->delete('id_user');
 
         $check_user = $this->db->get_where('data_user', ['id_user' => $id_user])->row_array();
