@@ -1,9 +1,7 @@
 <?php
-class modelContent extends CI_Model 
-{
+class Model_content extends CI_Model {
 	
-	function saverecords($data)
-	{
+	function saverecords($data) {
         $this->db->insert('floucloud', $data);
         return true;
 	}

@@ -3,9 +3,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Content extends CI_Controller {
    
-    public function content_post() {
+    public function index() {
         $this->load->database();
-        $this->load->model('modelContent');
+        $this->load->model('Model_content');
 
         $title['title'] = 'Floucloud Repository';
         $this->load->view('template/header', $title);
@@ -25,7 +25,7 @@ class Content extends CI_Controller {
             $data['picture_2']=$this->input->post('picture_2');
             $data['picture_3']=$this->input->post('picture_3');
 
-            $response=$this->modelContent->saverecords($data);
+            $response=$this->Model_content->saverecords($data);
 
             if($response==true) {
                 echo "Content Link Successfully Uploaded";

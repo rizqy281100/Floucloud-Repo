@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="modal-body">
-                      <form method="post" action="<?= base_url() ?>Content/content_post">
+                      <form method="post" action="<?= base_url() ?>Content/index">
                         <div class="form-row">
 
                           <div class="custom-file mb-3">
@@ -81,7 +81,7 @@
 
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Upload</button>
+                        <button type="button" class="btn btn-primary" name="save">Upload</button>
                     </div>
                   </div>
 
