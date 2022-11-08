@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="modal-body">
-                      <form>
+                      <form method="post" action="<?= base_url() ?>Content/content_post">
                         <div class="form-row">
 
                           <div class="custom-file mb-3">
@@ -45,7 +45,6 @@
                             <input type="text" class="form-control" id="contentVer" placeholder="Content Version">
                           </div>
 
-
                           <div class="form-group col-md-12">
                             <label for="contentTitle">Content Title</label>
                             <input type="text" class="form-control" id="contentTitle" placeholder="Content Title">
@@ -58,9 +57,9 @@
                           <textarea type="textarea" class="form-control" id="contentCaption" placeholder="Caption Here"></textarea>
                         </div>
 
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="uploadFile">
-                          <label class="custom-file-label" for="uploadFile">Choose File</label>
+                        <div class="form-group">
+                          <label for="contentLink">Content Version</label>
+                          <input type="text" class="form-control" id="contentLiknk" placeholder="Content Link">
                         </div>
 
                         <div class="custom-file mt-2">
@@ -79,12 +78,12 @@
                         </div>
 
                       </form>
-                    </div>
 
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Upload</button>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Upload</button>
                     </div>
+                  </div>
 
                   </div>
                   
