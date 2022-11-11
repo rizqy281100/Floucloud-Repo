@@ -5,8 +5,6 @@ class Admin extends CI_Controller {
 
     public function index() {
         $data['admin'] = $this->db->get('data_admin')->result_array();
-        // var_dump($query);
-        // die();
 
         $title['title'] = 'Floucloud Repository';
         $this->load->view('template/header', $title);

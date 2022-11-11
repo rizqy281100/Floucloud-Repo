@@ -110,7 +110,7 @@ $config['rest_realm'] = 'REST API';
 |           authorization key
 |
 */
-$config['rest_auth'] = FALSE;
+$config['rest_auth'] = 'basic';
 
 /*
 |--------------------------------------------------------------------------
@@ -157,6 +157,7 @@ $config['strict_api_and_auth'] = true; // force the use of both api and auth bef
 |
 */
 $config['auth_library_class'] = '';
+
 $config['auth_library_function'] = '';
 
 /*

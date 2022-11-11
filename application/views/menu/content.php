@@ -27,62 +27,64 @@
                     </div>
 
                     <div class="modal-body">
-                      <form method="post" action="<?= base_url() ?>Content/index">
+                      <form method="post" action="<?= base_url() ?>Content/simpan">
                         <div class="form-row">
 
                           <div class="custom-file mb-3">
-                            <input type="file" class="custom-file-input" id="uploadThumbnail">
+                            <input type="file" class="custom-file-input" name="thumbnail_picture" id="uploadThumbnail">
                             <label class="custom-file-label" for="uploadThumbnail">Choose Image Thumbnail</label>
                           </div>
 
                           <div class="form-group col-md-6">
                             <label for="category">Category</label>
-                            <input type="text" class="form-control" id="category" placeholder="Content Category">
+                            <input type="text" class="form-control" name="categories" id="category" placeholder="Content Category">
                           </div>
 
                           <div class="form-group col-md-6">
                             <label for="contentVer">Content Version</label>
-                            <input type="text" class="form-control" id="contentVer" placeholder="Content Version">
+                            <input type="text" class="form-control" name="document_version" id="contentVer" placeholder="Content Version">
                           </div>
 
                           <div class="form-group col-md-12">
                             <label for="contentTitle">Content Title</label>
-                            <input type="text" class="form-control" id="contentTitle" placeholder="Content Title">
+                            <input type="text" class="form-control" name="document_title" id="contentTitle" placeholder="Content Title">
                           </div>
 
                         </div>
                         
                         <div class="form-group">
                           <label for="contentCaption">Content Caption</label>
-                          <textarea type="textarea" class="form-control" id="contentCaption" placeholder="Caption Here"></textarea>
+                          <textarea type="textarea" class="form-control" name="document_caption" id="contentCaption" placeholder="Caption Here"></textarea>
                         </div>
 
                         <div class="form-group">
-                          <label for="contentLink">Content Version</label>
-                          <input type="text" class="form-control" id="contentLiknk" placeholder="Content Link">
+                          <label for="contentLink">Content Link</label>
+                          <input type="text" class="form-control" name="document_link" id="contentLiknk" placeholder="Content Link">
                         </div>
 
                         <div class="custom-file mt-2">
-                          <input type="file" class="custom-file-input" id="uploadPicture1">
+                          <input type="file" class="custom-file-input" name="picture_1" id="uploadPicture1">
                           <label class="custom-file-label" for="uploadPicture1">Choose Picture 1</label>
                         </div>
 
                         <div class="custom-file mt-2">
-                          <input type="file" class="custom-file-input" id="uploadPicture2">
+                          <input type="file" class="custom-file-input" name="picture_2" id="uploadPicture2">
                           <label class="custom-file-label" for="uploadPicture2">Choose Picture 2</label>
                         </div>
 
                         <div class="custom-file mt-2">
-                          <input type="file" class="custom-file-input" id="uploadPicture3">
+                          <input type="file" class="custom-file-input" name="picture_3" id="uploadPicture3">
                           <label class="custom-file-label" for="uploadPicture3">Choose Picture 3</label>
                         </div>
 
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" name="save">Upload</button>
+                    </div>
+
                       </form>
 
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" name="save">Upload</button>
-                    </div>
+                      
                   </div>
 
                   </div>
@@ -111,64 +113,37 @@
                   <table id="example2" class="table table-bordered table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Last Login</th>
-                        <th>Status</th>
+                        <th>Thumbnail</th>
+                        <th>Category</th>
+                        <th>Document Link</th>
+                        <th>Title</th>
+                        <th>Version</th>
+                        <th>Picture 1</th>
+                        <th>Picture 2</th>
+                        <th>Picture 3</th>
                         <th>Action</th>
                       </tr>
                     </thead>
 
                     <tbody>
-
-                      <!-- 1 - 10 -->
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
-                      </tr>
-
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Test</td>
-                        <td>Win 9+</td>
-                        <td> 5</td>
-                        <td>Z</td>
-                      </tr>
-
-                      <tr>
-                        <td>Girg</td>
-                        <td>Ethernet</td>                        
-                        <td>Win 8</td>                        
-                        <td> 7</td>                        
-                        <td>H</td>                                     
-                      </tr>
+                      <?php foreach($content as $list): ?>
                       
                       <tr>
-                        <td>Bro</td>
-                        <td>Internet</td>
-                        <td>Win XP</td>
-                        <td> 88</td>
-                        <td>Q</td>
+                        <td><?= $list['thumbnail_picture']?></td>
+                        <td><?= $list['categories']?></td>
+                        <td><?= $list['document_link']?></td>
+                        <td><?= $list['document_title']?></td>
+                        <td><?= $list['document_version']?></td>
+                        <td><?= $list['picture_1']?></td>
+                        <td><?= $list['picture_2']?></td>
+                        <td><?= $list['picture_3']?></td>
+                        <td>
+                          <a href="#" class="btn btn-info btn-sm update-record">Edit</a>
+                          <a href="#" class="btn btn-danger btn-sm delete-record">Delete</a>
+                        </td>
                       </tr>
 
-                      <tr>
-                        <td>Jeik</td>
-                        <td>Linux</td>
-                        <td>Teech</td>
-                        <td> 3</td>
-                        <td>Y</td>
-                      </tr>
-
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
-                      </tr>
+                      <?php endforeach; ?>
 
                     </tbody>
                   </table>
