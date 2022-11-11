@@ -24,7 +24,7 @@ class Content extends CI_Controller {
             $data['document_version']=$this->input->post('document_version');
             $data['document_title']=$this->input->post('document_title');
             $data['document_caption']=$this->input->post('document_caption');
-            $data['document_link']=$this->input->post('document_link');
+            // $data['document_link']=$this->input->post('document_link');
             $data['picture_1']=$this->input->post('picture_1');
             $data['picture_2']=$this->input->post('picture_2');
             $data['picture_3']=$this->input->post('picture_3');

@@ -115,7 +115,7 @@
                       <tr>
                         <th>Thumbnail</th>
                         <th>Category</th>
-                        <th>Document Link</th>
+                        <!-- <th>Document Link</th> -->
                         <th>Title</th>
                         <th>Version</th>
                         <th>Picture 1</th>
@@ -131,7 +131,7 @@
                       <tr>
                         <td><?= $list['thumbnail_picture']?></td>
                         <td><?= $list['categories']?></td>
-                        <td><?= $list['document_link']?></td>
+
                         <td><?= $list['document_title']?></td>
                         <td><?= $list['document_version']?></td>
                         <td><?= $list['picture_1']?></td>

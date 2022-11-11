@@ -7,8 +7,7 @@ class Dashboard extends CI_Controller {
 
         if($this->session->userdata('is_login') === true){
             $data['data_admin'] = $this->db->get_where('data_admin', ['email' => $this->session->userdata('email')])->row_array();
-            // var_dump($data['data_admin']);
-            // die();
+            
             $title['title'] = 'Floucloud Repository';
             $this->load->view('template/header', $title);
             $this->load->view('template/navbar', $title);
