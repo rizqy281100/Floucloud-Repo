@@ -3,7 +3,9 @@
       <!-- Left navbar links -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" data-widget="pushmenu" role="button"><i class="fas fa-bars"></i></a>
+          <a class="nav-link" data-widget="pushmenu" role="button">
+            <i class="fas fa-bars"></i>
+          </a>
         </li>
       </ul>
 
@@ -41,7 +43,7 @@
         <li class="nav-item dropdown">
 
           <a class="nav-link" data-toggle="dropdown">
-            <span class="mr-4"><?= $this->session->userdata('name') ?></span>
+            <span class="mr-4"><?= $this->session->userdata('username') ?></span>
             <i class="far fa-user"></i>
           </a>
 

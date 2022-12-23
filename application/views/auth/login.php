@@ -6,7 +6,7 @@
 
             <form method="post" action="<?php echo base_url('auth'); ?>" id="form_login">
               <div class="card-body">
-                <img class="img" src="assets/img/flou-logo.png" style="width: 280px; height: 200px;">
+                <img class="img" src="assets/img/new_logo.png" style="width: 450px; height: 200px;">
 
                 <?php if($this->session->flashdata('message')): ?>
                   <?php $this->session->flashdata('message') ?>

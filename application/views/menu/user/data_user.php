@@ -40,7 +40,6 @@
                     <tr>
                       <th>Name</th>
                       <th>Email</th>
-                      <th>NIK</th>
                       <th>Sales Segmen</th>
                       <th>Status</th>
                       <th>Last Login</th>
@@ -56,11 +55,13 @@
                       <tr>
                           <td><?= $list['username']?></td>
                           <td><?= $list['email']?></td>
-                          <td><?= $list['nik']?></td>
                           <td><?= $list['sales_segmen']?></td>
                           <td><?= $list['status']?></td>
                           <td><?= $list['last_login']?></td>
-                          <td><?= $list['username']?></td>
+                          <td>
+                            <a href="#" class="btn btn-info btn-sm update-record">Edit</a>
+                            <a href="#" class="btn btn-danger btn-sm delete-record">Delete</a>
+                          </td>
                       </tr>
 
                       <?php

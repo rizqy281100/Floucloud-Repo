@@ -5,8 +5,6 @@ class User extends CI_Controller {
 
     public function index() {
         $data['user'] = $this->db->get('data_user')->result_array();
-        // var_dump($query);
-        // die();
 
         $title['title'] = 'Floucloud Repository';
         $this->load->view('template/header', $title);

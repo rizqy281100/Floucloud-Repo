@@ -10,6 +10,12 @@
     background-repeat: no-repeat;
 }
 
+.img_logo {
+    background-image: url(https://apicms2.floucloud.id:4443/uploads/site/7c1496ab-4c69-4a8d-be6c-33fe300cf55e.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .card {
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.75);

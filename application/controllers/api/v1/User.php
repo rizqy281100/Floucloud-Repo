@@ -37,7 +37,7 @@ class User extends RestController {
 
     // Show User
     public function user_get() {
-        $id_user = $this->input->get('id');
+        $id_user = $this->input->get('id_user');
 
         $check_user = $this->db->get_where('data_user', ['id_user' => $id_user])->row_array();
 

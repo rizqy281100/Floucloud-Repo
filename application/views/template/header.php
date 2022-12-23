@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php echo $title ?></title>
   <!-- Tab Icon -->
-  <link rel="icon" href="assets/img/flou-logo.svg">
+  <link rel="icon" href="assets/img/new_icon.png">
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" type="text/css" href="assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- Bootstrap 4.6 -->
