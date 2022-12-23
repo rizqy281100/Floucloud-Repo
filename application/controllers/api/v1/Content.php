@@ -8,9 +8,9 @@ class Content extends RestController {
     public function content_get() {
         $id_content = $this->input->get('id');
 
-        $check_content = $this->db->get_where('data_content', ['id_content' => $id_content])->row_array();
+        $check_content = $this->db->get_where('data_content', ['id' => $id_content])->row_array();
 
-        //If Using id_content
+        //If Using id
         if($id_content) {
             if($check_content) {
                 $this->response([

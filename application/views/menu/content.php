@@ -113,14 +113,12 @@
                   <table id="example2" class="table table-bordered table-hover">
                     <thead>
                       <tr>
+                        <th>id</th>
                         <th>Thumbnail</th>
                         <th>Category</th>
-                        <!-- <th>Document Link</th> -->
+                        <th>Document Link</th>
                         <th>Title</th>
-                        <th>Version</th>
-                        <th>Picture 1</th>
-                        <th>Picture 2</th>
-                        <th>Picture 3</th>
+                        <!-- <th>Version</th> -->
                         <th>Action</th>
                       </tr>
                     </thead>
@@ -129,14 +127,11 @@
                       <?php foreach($content as $list): ?>
                       
                       <tr>
+                        <td><?= $list['id']?></td>
                         <td><?= $list['thumbnail_picture']?></td>
                         <td><?= $list['categories']?></td>
-
+                        <td><?= $list['document_link']?></td>
                         <td><?= $list['document_title']?></td>
-                        <td><?= $list['document_version']?></td>
-                        <td><?= $list['picture_1']?></td>
-                        <td><?= $list['picture_2']?></td>
-                        <td><?= $list['picture_3']?></td>
                         <td>
                           <a href="#" class="btn btn-info btn-sm update-record">Edit</a>
                           <a href="#" class="btn btn-danger btn-sm delete-record">Delete</a>
